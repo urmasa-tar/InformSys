@@ -28,47 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
+            grapPicter = new PictureBox();
             drawBtn = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)grapPicter).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // grapPicter
             // 
-            pictureBox1.BackColor = SystemColors.ButtonShadow;
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(532, 348);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            grapPicter.BackColor = SystemColors.ButtonShadow;
+            grapPicter.Location = new Point(12, 12);
+            grapPicter.Name = "grapPicter";
+            grapPicter.Size = new Size(602, 436);
+            grapPicter.TabIndex = 0;
+            grapPicter.TabStop = false;
             // 
             // drawBtn
             // 
-            drawBtn.Location = new Point(601, 49);
+            drawBtn.Location = new Point(620, 186);
             drawBtn.Name = "drawBtn";
             drawBtn.Size = new Size(143, 53);
             drawBtn.TabIndex = 1;
             drawBtn.Text = "Draw graph";
             drawBtn.UseVisualStyleBackColor = true;
+            drawBtn.Click += drawBtn_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1162, 653);
             Controls.Add(drawBtn);
-            Controls.Add(pictureBox1);
+            Controls.Add(grapPicter);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)grapPicter).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox grapPicter;
         private Button drawBtn;
     }
 }
