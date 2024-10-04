@@ -1,3 +1,7 @@
+using LiveCharts;
+using LiveCharts.WinForms;
+using LiveCharts.Configurations;
+
 namespace GraphAplication
 {
     public partial class Form1 : Form
@@ -5,6 +9,12 @@ namespace GraphAplication
         public Form1()
         {
             InitializeComponent();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
