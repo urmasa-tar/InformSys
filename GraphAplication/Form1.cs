@@ -6,8 +6,8 @@ namespace GraphAplication
     {
 
         protected double A = 1;
-
-
+        protected double k = 1;
+        protected int kd = 1;
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +22,10 @@ namespace GraphAplication
         private bool kqCheck(int x)
         {
             bool res = false;
-
+            if (((double)x) < A * k)
+            {
+                res = true;
+            }
             return res;
         }
 
@@ -34,12 +37,17 @@ namespace GraphAplication
 
             Point[] pointsArr = new Point[1000];
 
-            for(int point = 0; point < pointsArr.Length; point++)
+            for (int point = 0; point < pointsArr.Length; point++)
             {
                 pointsArr[point] = new Point(point, (int)(Math.Sin((double)point) * 100) + 200);
             }
 
             graph.DrawLines(pen, pointsArr);
+        }
+
+        private void referBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -43,6 +43,7 @@
             pictureBox1 = new PictureBox();
             label5 = new Label();
             textBox5 = new TextBox();
+            referBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)grapPicter).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -68,7 +69,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(830, 45);
+            textBox1.Location = new Point(832, 45);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(201, 27);
             textBox1.TabIndex = 2;
@@ -77,7 +78,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(830, 12);
+            label1.Location = new Point(832, 12);
             label1.Name = "label1";
             label1.Size = new Size(94, 20);
             label1.TabIndex = 3;
@@ -86,7 +87,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(830, 91);
+            label2.Location = new Point(832, 79);
             label2.Name = "label2";
             label2.Size = new Size(20, 20);
             label2.TabIndex = 5;
@@ -94,7 +95,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(829, 122);
+            textBox2.Location = new Point(831, 110);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(201, 27);
             textBox2.TabIndex = 4;
@@ -102,7 +103,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(829, 173);
+            label3.Location = new Point(832, 142);
             label3.Name = "label3";
             label3.Size = new Size(26, 20);
             label3.TabIndex = 7;
@@ -110,7 +111,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(828, 204);
+            textBox3.Location = new Point(831, 173);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(201, 27);
             textBox3.TabIndex = 6;
@@ -118,7 +119,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(831, 260);
+            label4.Location = new Point(831, 216);
             label4.Name = "label4";
             label4.Size = new Size(27, 20);
             label4.TabIndex = 9;
@@ -126,7 +127,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(830, 291);
+            textBox4.Location = new Point(830, 247);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(201, 27);
             textBox4.TabIndex = 8;
@@ -153,18 +154,28 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(831, 342);
+            label5.Location = new Point(831, 278);
             label5.Name = "label5";
-            label5.Size = new Size(16, 20);
+            label5.Size = new Size(27, 20);
             label5.TabIndex = 13;
-            label5.Text = "k";
+            label5.Text = "Dx";
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(830, 373);
+            textBox5.Location = new Point(830, 309);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(201, 27);
             textBox5.TabIndex = 12;
+            // 
+            // referBtn
+            // 
+            referBtn.Location = new Point(937, 351);
+            referBtn.Name = "referBtn";
+            referBtn.Size = new Size(94, 29);
+            referBtn.TabIndex = 14;
+            referBtn.Text = "Reference";
+            referBtn.UseVisualStyleBackColor = true;
+            referBtn.Click += referBtn_Click;
             // 
             // Form1
             // 
@@ -172,6 +183,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(1047, 559);
+            Controls.Add(referBtn);
             Controls.Add(label5);
             Controls.Add(textBox5);
             Controls.Add(pictureBox1);
@@ -211,5 +223,6 @@
         private PictureBox pictureBox1;
         private Label label5;
         private TextBox textBox5;
+        private Button referBtn;
     }
 }
