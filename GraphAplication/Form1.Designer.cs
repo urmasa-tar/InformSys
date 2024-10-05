@@ -39,11 +39,13 @@
             textBox3 = new TextBox();
             label4 = new Label();
             textBox4 = new TextBox();
-            button1 = new Button();
+            updateBtn = new Button();
             pictureBox1 = new PictureBox();
             label5 = new Label();
             textBox5 = new TextBox();
             referBtn = new Button();
+            downloadBtn = new Button();
+            uploadBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)grapPicter).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -59,7 +61,7 @@
             // 
             // drawBtn
             // 
-            drawBtn.Location = new Point(620, 93);
+            drawBtn.Location = new Point(620, 45);
             drawBtn.Name = "drawBtn";
             drawBtn.Size = new Size(143, 53);
             drawBtn.TabIndex = 1;
@@ -132,14 +134,15 @@
             textBox4.Size = new Size(201, 27);
             textBox4.TabIndex = 8;
             // 
-            // button1
+            // updateBtn
             // 
-            button1.Location = new Point(620, 206);
-            button1.Name = "button1";
-            button1.Size = new Size(143, 53);
-            button1.TabIndex = 10;
-            button1.Text = "Update parameters";
-            button1.UseVisualStyleBackColor = true;
+            updateBtn.Location = new Point(620, 126);
+            updateBtn.Name = "updateBtn";
+            updateBtn.Size = new Size(143, 53);
+            updateBtn.TabIndex = 10;
+            updateBtn.Text = "Update parameters";
+            updateBtn.UseVisualStyleBackColor = true;
+            updateBtn.Click += updateBtn_Click;
             // 
             // pictureBox1
             // 
@@ -177,17 +180,37 @@
             referBtn.UseVisualStyleBackColor = true;
             referBtn.Click += referBtn_Click;
             // 
+            // downloadBtn
+            // 
+            downloadBtn.Location = new Point(620, 200);
+            downloadBtn.Name = "downloadBtn";
+            downloadBtn.Size = new Size(143, 53);
+            downloadBtn.TabIndex = 15;
+            downloadBtn.Text = "Download parameters";
+            downloadBtn.UseVisualStyleBackColor = true;
+            // 
+            // uploadBtn
+            // 
+            uploadBtn.Location = new Point(624, 282);
+            uploadBtn.Name = "uploadBtn";
+            uploadBtn.Size = new Size(139, 54);
+            uploadBtn.TabIndex = 16;
+            uploadBtn.Text = "Upload parameters";
+            uploadBtn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(1047, 559);
+            Controls.Add(uploadBtn);
+            Controls.Add(downloadBtn);
             Controls.Add(referBtn);
             Controls.Add(label5);
             Controls.Add(textBox5);
             Controls.Add(pictureBox1);
-            Controls.Add(button1);
+            Controls.Add(updateBtn);
             Controls.Add(label4);
             Controls.Add(textBox4);
             Controls.Add(label3);
@@ -219,10 +242,12 @@
         private TextBox textBox3;
         private Label label4;
         private TextBox textBox4;
-        private Button button1;
+        private Button updateBtn;
         private PictureBox pictureBox1;
         private Label label5;
         private TextBox textBox5;
         private Button referBtn;
+        private Button downloadBtn;
+        private Button uploadBtn;
     }
 }

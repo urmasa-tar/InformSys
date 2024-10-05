@@ -7,7 +7,9 @@ namespace GraphAplication
 
         protected double A = 1;
         protected double k = 1;
+        protected double n = 1;
         protected int kd = 1;
+
         public Form1()
         {
             InitializeComponent();
@@ -32,20 +34,29 @@ namespace GraphAplication
         private void drawBtn_Click(object sender, EventArgs e)
         {
             Graphics graph = grapPicter.CreateGraphics();
-
+            formulClass formObj = new formulClass();
             Pen pen = new Pen(Color.Black, 3f);
 
             Point[] pointsArr = new Point[1000];
 
             for (int point = 0; point < pointsArr.Length; point++)
             {
-                pointsArr[point] = new Point(point, (int)(Math.Sin((double)point) * 100) + 200);
+                double pointVar = formObj.Calculation(A, n, k, kd);
+
+                pointsArr[point] = new Point(point, (int)(pointVar * 100) + 200);
             }
 
             graph.DrawLines(pen, pointsArr);
         }
 
         private void referBtn_Click(object sender, EventArgs e)
+        {
+            referenceForm refWindow = new referenceForm();
+
+            refWindow.ShowDialog();
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
         {
 
         }

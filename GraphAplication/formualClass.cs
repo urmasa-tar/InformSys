@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GraphAplication
 {
-    class formualClass
+    class formulClass
     {
-        public formualClass() { }
+        public formulClass() { }
 
 
         public bool updateForF()
@@ -18,6 +18,20 @@ namespace GraphAplication
             return res;
         }
 
+        private bool chedkForC()
+        {
+            bool res = false;
 
+
+
+            return res;
+        }
+
+        public double Calculation(double A, double n, double k, double kd)
+        { 
+            double res = 0;
+
+            return res;
+        }
     }
 }
