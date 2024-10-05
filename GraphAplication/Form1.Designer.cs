@@ -198,6 +198,7 @@
             downloadBtn.TabIndex = 15;
             downloadBtn.Text = "Download parameters";
             downloadBtn.UseVisualStyleBackColor = true;
+            downloadBtn.Click += downloadBtn_Click;
             // 
             // uploadBtn
             // 
@@ -207,6 +208,7 @@
             uploadBtn.TabIndex = 16;
             uploadBtn.Text = "Upload parameters";
             uploadBtn.UseVisualStyleBackColor = true;
+            uploadBtn.Click += uploadBtn_Click;
             // 
             // label6
             // 

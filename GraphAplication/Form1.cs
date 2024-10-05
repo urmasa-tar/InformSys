@@ -41,7 +41,7 @@ namespace GraphAplication
 
             for (int point = 0; point < pointsArr.Length; point++)
             {
-                double pointVar = formObj.Calculation(A, n, k, kd);
+                double pointVar = formObj.Calculation(A, n, k, kd, point);
 
                 pointsArr[point] = new Point(point, (int)(pointVar * 100) + 200);
             }
@@ -57,6 +57,16 @@ namespace GraphAplication
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downloadBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uploadBtn_Click(object sender, EventArgs e)
         {
 
         }
