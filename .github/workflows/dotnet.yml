@@ -1,0 +1,32 @@
+name: .NET Core CI
+
+on:
+  push:
+    branches:
+      - main  # Замените на вашу основную ветку
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Проверка кода
+      uses: actions/checkout@v2
+
+    - name: Установка .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x'  # Укажите версию .NET, которую вы используете
+
+    - name: Восстановление зависимостей
+      run: dotnet restore
+
+    - name: Построение проекта
+      run: dotnet build --configuration Release
+
+    - name: Запуск тестов
+      run: dotnet test --configuration Release --no-build --verbosity normal
+
