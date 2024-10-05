@@ -46,6 +46,12 @@
             referBtn = new Button();
             downloadBtn = new Button();
             uploadBtn = new Button();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            textBox6 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)grapPicter).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -101,6 +107,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(201, 27);
             textBox2.TabIndex = 4;
+            textBox2.Text = "1000";
             // 
             // label3
             // 
@@ -117,6 +124,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(201, 27);
             textBox3.TabIndex = 6;
+            textBox3.Text = "1";
             // 
             // label4
             // 
@@ -133,6 +141,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(201, 27);
             textBox4.TabIndex = 8;
+            textBox4.Text = "1";
             // 
             // updateBtn
             // 
@@ -169,6 +178,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(201, 27);
             textBox5.TabIndex = 12;
+            textBox5.Text = "1";
             // 
             // referBtn
             // 
@@ -198,12 +208,70 @@
             uploadBtn.Text = "Upload parameters";
             uploadBtn.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(647, 413);
+            label6.Name = "label6";
+            label6.Size = new Size(50, 20);
+            label6.TabIndex = 17;
+            label6.Text = "label6";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(713, 413);
+            label7.Name = "label7";
+            label7.Size = new Size(50, 20);
+            label7.TabIndex = 18;
+            label7.Text = "label7";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(843, 413);
+            label8.Name = "label8";
+            label8.Size = new Size(50, 20);
+            label8.TabIndex = 20;
+            label8.Text = "label8";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(777, 413);
+            label9.Name = "label9";
+            label9.Size = new Size(50, 20);
+            label9.TabIndex = 19;
+            label9.Text = "label9";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(911, 413);
+            label10.Name = "label10";
+            label10.Size = new Size(58, 20);
+            label10.TabIndex = 21;
+            label10.Text = "label10";
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(652, 452);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(317, 27);
+            textBox6.TabIndex = 22;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(1047, 559);
+            Controls.Add(textBox6);
+            Controls.Add(label10);
+            Controls.Add(label8);
+            Controls.Add(label9);
+            Controls.Add(label7);
+            Controls.Add(label6);
             Controls.Add(uploadBtn);
             Controls.Add(downloadBtn);
             Controls.Add(referBtn);
@@ -249,5 +317,11 @@
         private Button referBtn;
         private Button downloadBtn;
         private Button uploadBtn;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private TextBox textBox6;
     }
 }
