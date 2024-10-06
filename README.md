@@ -7,5 +7,9 @@
 
 <img src = "./img/baseAplication01.png">
 
-<p></p>
+<p>Так же требуется добавить в форму базовые функционалы для формул, различные кнопочки и.т.д.</p>
+
+
+
+<img src = "./img/baseWithFormula'.png">
 
