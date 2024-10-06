@@ -19,7 +19,7 @@ jobs:
     - name: Установка .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '6.0.x'  # Укажите версию .NET, которую вы используете
+        dotnet-version: '8.0.x'  # Укажите версию .NET, которую вы используете
 
     - name: Восстановление зависимостей
       run: dotnet restore GraphAplication/GraphAplication.sln
