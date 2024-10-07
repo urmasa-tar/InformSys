@@ -215,49 +215,49 @@
             label6.AutoSize = true;
             label6.Location = new Point(647, 413);
             label6.Name = "label6";
-            label6.Size = new Size(50, 20);
+            label6.Size = new Size(19, 20);
             label6.TabIndex = 17;
-            label6.Text = "label6";
+            label6.Text = "A";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Location = new Point(713, 413);
             label7.Name = "label7";
-            label7.Size = new Size(50, 20);
+            label7.Size = new Size(20, 20);
             label7.TabIndex = 18;
-            label7.Text = "label7";
+            label7.Text = "N";
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Location = new Point(843, 413);
             label8.Name = "label8";
-            label8.Size = new Size(50, 20);
+            label8.Size = new Size(27, 20);
             label8.TabIndex = 20;
-            label8.Text = "label8";
+            label8.Text = "Kd";
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Location = new Point(777, 413);
             label9.Name = "label9";
-            label9.Size = new Size(50, 20);
+            label9.Size = new Size(26, 20);
             label9.TabIndex = 19;
-            label9.Text = "label9";
+            label9.Text = "K1";
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Location = new Point(911, 413);
             label10.Name = "label10";
-            label10.Size = new Size(58, 20);
+            label10.Size = new Size(27, 20);
             label10.TabIndex = 21;
-            label10.Text = "label10";
+            label10.Text = "Dx";
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(652, 452);
+            textBox6.Location = new Point(647, 454);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(317, 27);
             textBox6.TabIndex = 22;
