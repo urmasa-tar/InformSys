@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             grapPicter = new PictureBox();
             drawBtn = new Button();
-            textBox1 = new TextBox();
+            AtextBox = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            textBox2 = new TextBox();
+            NtextBox = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            ktextBox = new TextBox();
             label4 = new Label();
-            textBox4 = new TextBox();
+            kdtextBox = new TextBox();
             updateBtn = new Button();
             pictureBox1 = new PictureBox();
             label5 = new Label();
-            textBox5 = new TextBox();
+            dxtextBox = new TextBox();
             referBtn = new Button();
             downloadBtn = new Button();
             uploadBtn = new Button();
@@ -75,13 +75,13 @@
             drawBtn.UseVisualStyleBackColor = true;
             drawBtn.Click += drawBtn_Click;
             // 
-            // textBox1
+            // AtextBox
             // 
-            textBox1.Location = new Point(832, 45);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(201, 27);
-            textBox1.TabIndex = 2;
-            textBox1.Text = "1";
+            AtextBox.Location = new Point(832, 45);
+            AtextBox.Name = "AtextBox";
+            AtextBox.Size = new Size(201, 27);
+            AtextBox.TabIndex = 2;
+            AtextBox.Text = "1";
             // 
             // label1
             // 
@@ -101,13 +101,13 @@
             label2.TabIndex = 5;
             label2.Text = "N";
             // 
-            // textBox2
+            // NtextBox
             // 
-            textBox2.Location = new Point(831, 110);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(201, 27);
-            textBox2.TabIndex = 4;
-            textBox2.Text = "1000";
+            NtextBox.Location = new Point(831, 110);
+            NtextBox.Name = "NtextBox";
+            NtextBox.Size = new Size(201, 27);
+            NtextBox.TabIndex = 4;
+            NtextBox.Text = "1000";
             // 
             // label3
             // 
@@ -118,13 +118,13 @@
             label3.TabIndex = 7;
             label3.Text = "K1";
             // 
-            // textBox3
+            // ktextBox
             // 
-            textBox3.Location = new Point(831, 173);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(201, 27);
-            textBox3.TabIndex = 6;
-            textBox3.Text = "1";
+            ktextBox.Location = new Point(831, 173);
+            ktextBox.Name = "ktextBox";
+            ktextBox.Size = new Size(201, 27);
+            ktextBox.TabIndex = 6;
+            ktextBox.Text = "1";
             // 
             // label4
             // 
@@ -135,13 +135,13 @@
             label4.TabIndex = 9;
             label4.Text = "Kd";
             // 
-            // textBox4
+            // kdtextBox
             // 
-            textBox4.Location = new Point(830, 247);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(201, 27);
-            textBox4.TabIndex = 8;
-            textBox4.Text = "1";
+            kdtextBox.Location = new Point(830, 247);
+            kdtextBox.Name = "kdtextBox";
+            kdtextBox.Size = new Size(201, 27);
+            kdtextBox.TabIndex = 8;
+            kdtextBox.Text = "1";
             // 
             // updateBtn
             // 
@@ -172,13 +172,13 @@
             label5.TabIndex = 13;
             label5.Text = "Dx";
             // 
-            // textBox5
+            // dxtextBox
             // 
-            textBox5.Location = new Point(830, 309);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(201, 27);
-            textBox5.TabIndex = 12;
-            textBox5.Text = "1";
+            dxtextBox.Location = new Point(830, 309);
+            dxtextBox.Name = "dxtextBox";
+            dxtextBox.Size = new Size(201, 27);
+            dxtextBox.TabIndex = 12;
+            dxtextBox.Text = "1";
             // 
             // referBtn
             // 
@@ -278,17 +278,17 @@
             Controls.Add(downloadBtn);
             Controls.Add(referBtn);
             Controls.Add(label5);
-            Controls.Add(textBox5);
+            Controls.Add(dxtextBox);
             Controls.Add(pictureBox1);
             Controls.Add(updateBtn);
             Controls.Add(label4);
-            Controls.Add(textBox4);
+            Controls.Add(kdtextBox);
             Controls.Add(label3);
-            Controls.Add(textBox3);
+            Controls.Add(ktextBox);
             Controls.Add(label2);
-            Controls.Add(textBox2);
+            Controls.Add(NtextBox);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(AtextBox);
             Controls.Add(drawBtn);
             Controls.Add(grapPicter);
             Name = "Form1";
@@ -304,18 +304,18 @@
 
         private PictureBox grapPicter;
         private Button drawBtn;
-        private TextBox textBox1;
+        private TextBox AtextBox;
         private Label label1;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox NtextBox;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox ktextBox;
         private Label label4;
-        private TextBox textBox4;
+        private TextBox kdtextBox;
         private Button updateBtn;
         private PictureBox pictureBox1;
         private Label label5;
-        private TextBox textBox5;
+        private TextBox dxtextBox;
         private Button referBtn;
         private Button downloadBtn;
         private Button uploadBtn;

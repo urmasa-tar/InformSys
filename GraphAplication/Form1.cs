@@ -8,7 +8,14 @@ namespace GraphAplication
         protected double A = 1;
         protected double k = 1;
         protected double n = 1;
+        protected double dx = 1;
         protected int kd = 1;
+
+        protected double Ap = -1;
+        protected double kp = 1;
+        protected double np = 1;
+        protected double dxp = 1;
+        protected int kdp = 1;
 
         public Form1()
         {
@@ -58,6 +65,10 @@ namespace GraphAplication
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
+            A = Convert.ToDouble(AtextBox.Text);
+            k = Convert.ToDouble(ktextBox.Text);
+            n = Convert.ToDouble(NtextBox.Text);
+            kd = (int)Convert.ToInt16(kdtextBox.Text);
 
         }
 
