@@ -14,7 +14,7 @@ namespace GraphAplication
         public bool updateForF()
         {
             bool res = true;
-
+            
             return res;
         }
 

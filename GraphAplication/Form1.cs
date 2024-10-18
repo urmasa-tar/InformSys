@@ -1,5 +1,7 @@
 
 
+using System.Xml.Serialization;
+
 namespace GraphAplication
 {
     public partial class Form1 : Form
@@ -69,17 +71,71 @@ namespace GraphAplication
             k = Convert.ToDouble(ktextBox.Text);
             n = Convert.ToDouble(NtextBox.Text);
             kd = (int)Convert.ToInt16(kdtextBox.Text);
+            dx = Convert.ToDouble(dxtextBox.Text);
+            if (Ap == -1) // There are no previose varible
+            {
+                Ap = -1;
+                kp = 1;
+                np = 1;
+                dxp = 1;
+                kdp = 1;
+            }
+            else
+            {
+                Ap = -1;
+                kp = 1;
+                np = 1;
+                dxp = 1;
+                kdp = 1;
+            }
+            OutDorCorner();
+        }
 
+        private void OutDorCorner()
+        {
+            textBox6.Text = Convert.ToString(Ap) + "          " + Convert.ToString(np);
         }
 
         private void downloadBtn_Click(object sender, EventArgs e)
         {
+            // Создаем диалог для сохранения файла
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                saveFileDialog.Title = "Сохранить текстовый файл";
 
+                // Если пользователь нажал кнопку "Сохранить"
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Получаем путь файла
+                    string filePath = saveFileDialog.FileName;
+
+                    // Сохраняем содержимое текстового поля в файл
+                    File.WriteAllText(filePath, AtextBox.Text + " " + ktextBox.Text
+                        + " " + NtextBox.Text + " " + kdtextBox.Text + " " + dxtextBox.Text);
+                }
+            }
         }
 
         private void uploadBtn_Click(object sender, EventArgs e)
         {
+            // Создаем диалог для сохранения файла
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                saveFileDialog.Title = "Сохранить текстовый файл";
 
+                // Если пользователь нажал кнопку "Сохранить"
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Получаем путь файла
+                    string filePath = saveFileDialog.FileName;
+
+                    // Сохраняем содержимое текстового поля в файл
+                    File.WriteAllText(filePath, AtextBox.Text + " " + ktextBox.Text
+                        + " " + NtextBox.Text + " " + kdtextBox.Text + " " + dxtextBox.Text);
+                }
+            }
         }
     }
 }
