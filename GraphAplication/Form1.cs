@@ -9,13 +9,13 @@ namespace GraphAplication
 
         protected double A = 1;
         protected double k = 1;
-        protected double n = 1;
+        protected int n = 1000;
         protected double dx = 1;
         protected int kd = 1;
 
         protected double Ap = -1;
         protected double kp = 1;
-        protected double np = 1;
+        protected int np = 1;
         protected double dxp = 1;
         protected int kdp = 1;
 
@@ -42,11 +42,12 @@ namespace GraphAplication
 
         private void drawBtn_Click(object sender, EventArgs e)
         {
+            // grapPicter.Image = null;
             Graphics graph = grapPicter.CreateGraphics();
             formulClass formObj = new formulClass();
             Pen pen = new Pen(Color.Black, 3f);
 
-            Point[] pointsArr = new Point[1000];
+            Point[] pointsArr = new Point[n];
 
             for (int point = 0; point < pointsArr.Length; point++)
             {
@@ -67,33 +68,25 @@ namespace GraphAplication
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
+            
+            Ap = A;
+            kp = k;
+            np = n;
+            dxp = dx;
+            kdp = kd;
+          
             A = Convert.ToDouble(AtextBox.Text);
             k = Convert.ToDouble(ktextBox.Text);
-            n = Convert.ToDouble(NtextBox.Text);
+            n = Convert.ToInt16(NtextBox.Text);
             kd = (int)Convert.ToInt16(kdtextBox.Text);
             dx = Convert.ToDouble(dxtextBox.Text);
-            if (Ap == -1) // There are no previose varible
-            {
-                Ap = -1;
-                kp = 1;
-                np = 1;
-                dxp = 1;
-                kdp = 1;
-            }
-            else
-            {
-                Ap = -1;
-                kp = 1;
-                np = 1;
-                dxp = 1;
-                kdp = 1;
-            }
             OutDorCorner();
         }
 
         private void OutDorCorner()
         {
-            textBox6.Text = Convert.ToString(Ap) + "          " + Convert.ToString(np);
+            textBox6.Text = Convert.ToString(Ap) + "          " + Convert.ToString(np) + "             " + Convert.ToString(kp)
+                + "             " + Convert.ToString(dxp) + "             " + Convert.ToString(kdp);
         }
 
         private void downloadBtn_Click(object sender, EventArgs e)
