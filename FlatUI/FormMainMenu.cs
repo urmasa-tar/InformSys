@@ -41,5 +41,16 @@ namespace FlatUI
             return ColorTranslator.FromHtml(color);
 
         }
+
+        private void activateButton(object ButtonSender)
+        {
+            if (ButtonSender != null)
+            {
+                Color color = selectThemeColor();
+                currentButton = (Button)ButtonSender;
+                currentButton.BackColor = color;
+                currentButton.ForeColor = Color.White;   
+            }
+        }
     }
 }
