@@ -1,6 +1,6 @@
 ﻿namespace FlatUI
 {
-    partial class Form1
+    partial class FormMainMenu
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.btnDraw = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnDraw = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,44 +52,20 @@
             this.panelMenu.Size = new System.Drawing.Size(269, 670);
             this.panelMenu.TabIndex = 0;
             // 
-            // panelLogo
+            // button3
             // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(269, 83);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // btnDraw
-            // 
-            this.btnDraw.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDraw.FlatAppearance.BorderSize = 0;
-            this.btnDraw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDraw.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btnDraw.Location = new System.Drawing.Point(0, 83);
-            this.btnDraw.Name = "btnDraw";
-            this.btnDraw.Padding = new System.Windows.Forms.Padding(11, 10, 0, 0);
-            this.btnDraw.Size = new System.Drawing.Size(269, 83);
-            this.btnDraw.TabIndex = 1;
-            this.btnDraw.Text = "DrawImageGraph";
-            this.btnDraw.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDraw.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button1.Location = new System.Drawing.Point(0, 166);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(11, 10, 0, 0);
-            this.button1.Size = new System.Drawing.Size(269, 83);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Settings";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button3.Location = new System.Drawing.Point(0, 332);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(11, 10, 0, 0);
+            this.button3.Size = new System.Drawing.Size(269, 83);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Save";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -106,29 +82,54 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button1
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button3.Location = new System.Drawing.Point(0, 332);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(11, 10, 0, 0);
-            this.button3.Size = new System.Drawing.Size(269, 83);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Save";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.button1.Location = new System.Drawing.Point(0, 166);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(11, 10, 0, 0);
+            this.button1.Size = new System.Drawing.Size(269, 83);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Settings";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // btnDraw
+            // 
+            this.btnDraw.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDraw.FlatAppearance.BorderSize = 0;
+            this.btnDraw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDraw.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnDraw.Location = new System.Drawing.Point(0, 83);
+            this.btnDraw.Name = "btnDraw";
+            this.btnDraw.Padding = new System.Windows.Forms.Padding(11, 10, 0, 0);
+            this.btnDraw.Size = new System.Drawing.Size(269, 83);
+            this.btnDraw.TabIndex = 1;
+            this.btnDraw.Text = "DrawImageGraph";
+            this.btnDraw.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDraw.UseVisualStyleBackColor = true;
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(269, 83);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1214, 670);
             this.Controls.Add(this.panelMenu);
-            this.Name = "Form1";
+            this.Name = "FormMainMenu";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormMainMenu_Load);
             this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 

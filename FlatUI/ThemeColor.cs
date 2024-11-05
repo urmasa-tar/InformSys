@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FlatUI
 {
-    public class ThemeColor
+    public static class ThemeColor
     {
-        public List<String> colorName = new List<string>() {
+        public static List<String> colorName = new List<string>() {
         "#3F5185",
         "#009688",
         "#FF5722",
