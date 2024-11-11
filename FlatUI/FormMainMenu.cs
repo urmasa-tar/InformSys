@@ -25,7 +25,7 @@ namespace FlatUI
             InitializeComponent();
 
             // Создаем новый график
-            chart1.Series.Clear(); // Очищаем все серии
+            chartForFormula.Series.Clear(); // Очищаем все серии
 
             Series series = new Series("function"); // Создаем новую серию
             series.ChartType = SeriesChartType.Line; // Тип графика - линия
@@ -37,14 +37,14 @@ namespace FlatUI
             series.Points.AddXY(4, 40);
 
             // Добавляем серию на график
-            chart1.Series.Add(series);
+            chartForFormula.Series.Add(series);
 
             // Настраиваем оси
-            chart1.ChartAreas[0].AxisX.Title = "x";
-            chart1.ChartAreas[0].AxisY.Title = "f(x)";
+            chartForFormula.ChartAreas[0].AxisX.Title = "x";
+            chartForFormula.ChartAreas[0].AxisY.Title = "f(x)";
 
             // Показываем легенду
-            chart1.Legends[0].Enabled = true;
+            chartForFormula.Legends[0].Enabled = true;
         }
 
 
