@@ -10,6 +10,33 @@ namespace FlatUI
     {
         funcClasscs() { }
 
+        public double calculateFunction(int x)
+        {
+            double result = 0;
+            
+            return result;
+        }
+
+        public bool updatePar()
+        {
+            bool res = false;
+            try
+            {
+
+            }
+            catch (InvalidCastException ex)
+            {
+                // Types error exceprion
+
+            }
+            finally
+            {
+
+            }
+
+
+            return res;
+        }
 
     }
 }
