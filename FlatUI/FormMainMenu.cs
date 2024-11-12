@@ -26,12 +26,12 @@ namespace FlatUI
 
         // Parametrs for function graph
         //
-        long N; // Count of points
-        double a; // Value of argument
-        double k1; // koef for first value in function
-        double x1; // first value for functions argument
-        double kd; // koef for function step
-        double dx; // step for function changing
+        protected long N; // Count of points
+        protected double a; // Value of argument
+        protected double k1; // koef for first value in function
+        protected double x1; // first value for functions argument
+        protected double kd; // koef for function step
+        protected double dx; // step for function changing
 
         public FormMainMenu()
         {
