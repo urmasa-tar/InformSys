@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.uploadBtn = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnDraw = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chartForFormula = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelDown = new System.Windows.Forms.Panel();
-            this.pBoxFormula = new System.Windows.Forms.PictureBox();
             this.pBoxStandartValue = new System.Windows.Forms.PictureBox();
-            this.uploadBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pBoxFormula = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartForFormula)).BeginInit();
             this.panelDown.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxFormula)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxStandartValue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxFormula)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -68,6 +68,22 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(269, 753);
             this.panelMenu.TabIndex = 0;
+            // 
+            // uploadBtn
+            // 
+            this.uploadBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uploadBtn.FlatAppearance.BorderSize = 0;
+            this.uploadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uploadBtn.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.uploadBtn.Location = new System.Drawing.Point(0, 415);
+            this.uploadBtn.Name = "uploadBtn";
+            this.uploadBtn.Padding = new System.Windows.Forms.Padding(11, 10, 0, 0);
+            this.uploadBtn.Size = new System.Drawing.Size(269, 83);
+            this.uploadBtn.TabIndex = 5;
+            this.uploadBtn.Text = "Uplaod";
+            this.uploadBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uploadBtn.UseVisualStyleBackColor = true;
+            this.uploadBtn.Click += new System.EventHandler(this.uploadBtn_Click);
             // 
             // btnSave
             // 
@@ -143,18 +159,27 @@
             this.panelLogo.Size = new System.Drawing.Size(269, 83);
             this.panelLogo.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(48, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 71);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // chartForFormula
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartForFormula.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartForFormula.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chartForFormula.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartForFormula.Legends.Add(legend1);
             this.chartForFormula.Location = new System.Drawing.Point(415, 28);
             this.chartForFormula.Name = "chartForFormula";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartForFormula.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartForFormula.Series.Add(series1);
             this.chartForFormula.Size = new System.Drawing.Size(679, 331);
             this.chartForFormula.TabIndex = 1;
             this.chartForFormula.Text = "mainFormula";
@@ -170,16 +195,6 @@
             this.panelDown.Size = new System.Drawing.Size(945, 351);
             this.panelDown.TabIndex = 2;
             // 
-            // pBoxFormula
-            // 
-            this.pBoxFormula.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pBoxFormula.ErrorImage")));
-            this.pBoxFormula.Image = ((System.Drawing.Image)(resources.GetObject("pBoxFormula.Image")));
-            this.pBoxFormula.Location = new System.Drawing.Point(256, 3);
-            this.pBoxFormula.Name = "pBoxFormula";
-            this.pBoxFormula.Size = new System.Drawing.Size(492, 97);
-            this.pBoxFormula.TabIndex = 0;
-            this.pBoxFormula.TabStop = false;
-            // 
             // pBoxStandartValue
             // 
             this.pBoxStandartValue.Image = ((System.Drawing.Image)(resources.GetObject("pBoxStandartValue.Image")));
@@ -189,29 +204,15 @@
             this.pBoxStandartValue.TabIndex = 1;
             this.pBoxStandartValue.TabStop = false;
             // 
-            // uploadBtn
+            // pBoxFormula
             // 
-            this.uploadBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.uploadBtn.FlatAppearance.BorderSize = 0;
-            this.uploadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.uploadBtn.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.uploadBtn.Location = new System.Drawing.Point(0, 415);
-            this.uploadBtn.Name = "uploadBtn";
-            this.uploadBtn.Padding = new System.Windows.Forms.Padding(11, 10, 0, 0);
-            this.uploadBtn.Size = new System.Drawing.Size(269, 83);
-            this.uploadBtn.TabIndex = 5;
-            this.uploadBtn.Text = "Uplaod";
-            this.uploadBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uploadBtn.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(48, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 71);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pBoxFormula.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pBoxFormula.ErrorImage")));
+            this.pBoxFormula.Image = ((System.Drawing.Image)(resources.GetObject("pBoxFormula.Image")));
+            this.pBoxFormula.Location = new System.Drawing.Point(256, 3);
+            this.pBoxFormula.Name = "pBoxFormula";
+            this.pBoxFormula.Size = new System.Drawing.Size(492, 97);
+            this.pBoxFormula.TabIndex = 0;
+            this.pBoxFormula.TabStop = false;
             // 
             // FormMainMenu
             // 
@@ -226,11 +227,11 @@
             this.Load += new System.EventHandler(this.FormMainMenu_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartForFormula)).EndInit();
             this.panelDown.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxFormula)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxStandartValue)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxFormula)).EndInit();
             this.ResumeLayout(false);
 
         }
