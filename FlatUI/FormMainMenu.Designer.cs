@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.uploadBtn = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -170,16 +170,16 @@
             // 
             // chartForFormula
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartForFormula.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartForFormula.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartForFormula.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartForFormula.Legends.Add(legend2);
             this.chartForFormula.Location = new System.Drawing.Point(415, 28);
             this.chartForFormula.Name = "chartForFormula";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartForFormula.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartForFormula.Series.Add(series2);
             this.chartForFormula.Size = new System.Drawing.Size(679, 331);
             this.chartForFormula.TabIndex = 1;
             this.chartForFormula.Text = "mainFormula";
@@ -192,7 +192,7 @@
             this.panelDown.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelDown.Location = new System.Drawing.Point(269, 402);
             this.panelDown.Name = "panelDown";
-            this.panelDown.Size = new System.Drawing.Size(945, 351);
+            this.panelDown.Size = new System.Drawing.Size(972, 351);
             this.panelDown.TabIndex = 2;
             // 
             // pBoxStandartValue
@@ -218,7 +218,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1214, 753);
+            this.ClientSize = new System.Drawing.Size(1241, 753);
             this.Controls.Add(this.panelDown);
             this.Controls.Add(this.chartForFormula);
             this.Controls.Add(this.panelMenu);

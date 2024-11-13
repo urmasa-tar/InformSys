@@ -16,5 +16,10 @@ namespace FlatUI
         {
             InitializeComponent();
         }
+
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
