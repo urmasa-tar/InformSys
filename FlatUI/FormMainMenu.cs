@@ -93,29 +93,51 @@ namespace FlatUI
 
         private void btnDraw_Click(object sender, EventArgs e)
         {
-            // Создаем новый график
-            chartForFormula.Series.Clear(); // Очищаем все серии
+            chartForFormula.Series.Clear();
 
-            Series series = new Series("function"); // Создаем новую серию
-            series.ChartType = SeriesChartType.Line; // Тип графика - линия
+            // Параметры функции
+            double A = 1;
+            double x1 = -10;
+            double k = 0.5;
+            double a = 4;
 
-            // Добавляем точки данных
-            /*
-            series.Points.AddXY(1, 10); // (x, y)
-            series.Points.AddXY(2, 20);
-            series.Points.AddXY(3, 30);
-            series.Points.AddXY(4, 40);
-            */
+            // Первая серия для первой части функции
+            var series1 = new Series("FirstPart")
+            {
+                Color = System.Drawing.Color.Blue,
+                ChartType = SeriesChartType.Line
+            };
 
-            // Добавляем серию на график
-            chartForFormula.Series.Add(series);
+            // Вторая серия для второй части функции
+            var series2 = new Series("SecondPart")
+            {
+                Color = System.Drawing.Color.Red,
+                ChartType = SeriesChartType.Line
+            };
 
-            // Настраиваем оси
-            chartForFormula.ChartAreas[0].AxisX.Title = "x";
-            chartForFormula.ChartAreas[0].AxisY.Title = "F(x, a)";
+            // Генерация точек для первой части функции
+            for (double x = x1; x < k * a; x += 0.01)
+            {
+                double y = Math.Sqrt(A * Math.Abs(x + 2 * A));
+                series1.Points.AddXY(x, y);
+            }
 
-            // Показываем легенду
-            chartForFormula.Legends[0].Enabled = true;
+            // Генерация точек для второй части функции
+            for (double x = k * a; x <= 30; x += 0.01)
+            {
+                double y = A * Math.Cos(x + 1) + A;
+                series2.Points.AddXY(x, y);
+            }
+
+            // Добавляем серии к чарту
+            chartForFormula.Series.Add(series1);
+            chartForFormula.Series.Add(series2);
+
+            // Настройки осей
+            chartForFormula.ChartAreas[0].AxisX.Minimum = x1;
+            chartForFormula.ChartAreas[0].AxisX.Maximum = 30;
+            chartForFormula.ChartAreas[0].AxisY.Minimum = -10;
+            chartForFormula.ChartAreas[0].AxisY.Maximum = 10;
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
