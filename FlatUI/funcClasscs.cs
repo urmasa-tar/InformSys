@@ -15,6 +15,8 @@ namespace FlatUI
         {
             double result = 0;
             
+
+
             return result;
         }
 

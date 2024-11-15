@@ -20,7 +20,7 @@ namespace FlatUI
         private void button1_Click(object sender, EventArgs e)
         {
             // FormMainMenu.Instance.mainFunction.updatePar();
-            FormMainMenu.Instance.N = txtBN.Text;
+            // FormMainMenu.Instance.N = txtBN.Text;
         }
     }
 }
