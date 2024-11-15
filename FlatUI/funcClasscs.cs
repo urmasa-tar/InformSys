@@ -9,7 +9,7 @@ namespace FlatUI
 {
     public class funcClasscs
     {
-        funcClasscs() { }
+        public funcClasscs() { }
 
         public double calculateFunction(int x)
         {
@@ -18,18 +18,17 @@ namespace FlatUI
             return result;
         }
 
-        public bool updatePar()
+        public bool updatePar(long Np, double ap, double k1p, double x1, double kd, double dx)
         {
             bool res = false;
             try
             {
-
+                res = true;
             }
             catch (InvalidCastException ex)
             {
                 // Types error exceprion
                 MessageBox.Show("Ошибка: " + ex.Message);
-
             }
             finally
             {

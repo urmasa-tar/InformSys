@@ -16,27 +16,36 @@ namespace FlatUI
 {
     public partial class FormMainMenu : Form
     {
+
+        private static FormMainMenu _instance;
+
         private Button currentButton;
         private Random random;
         private int tempIndex;
-
-        private const string ConnectionString = "Server=localhost;Database=MyDatabase; User Id=mrBooter; Password=123456;";
+        public funcClasscs mainFunction;
+        private const string ConnectionString = "Server=localhost; Database=MyDatabase; User Id=mrBooter; Password=123456;";
 
         //private ZedGraphControl zedGraphControl;
 
         // Parametrs for function graph
         //
-        protected long N; // Count of points
-        protected double a; // Value of argument
-        protected double k1; // koef for first value in function
-        protected double x1; // first value for functions argument
-        protected double kd; // koef for function step
-        protected double dx; // step for function changing
+        public long N; // Count of points
+        public double a; // Value of argument
+        public double k1; // koef for first value in function
+        public double x1; // first value for functions argument
+        public double kd; // koef for function step
+        public double dx; // step for function changing
+
+        public static FormMainMenu Instance
+        {
+            get { return _instance ?? throw new InvalidOperationException("Форма еще не создана!"); }
+        }
 
         public FormMainMenu()
         {
             InitializeComponent();
-
+            _instance = this;
+            mainFunction = new funcClasscs();
             // base value for global varibles
             N = 57;
             a = -5;
@@ -44,6 +53,7 @@ namespace FlatUI
             k1 = 0;
             x1 = 0;
             kd = 1;
+
 
         }
 
