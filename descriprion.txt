@@ -1,1 +1,2 @@
 Description by national "Гост"
+Adaptive UI
