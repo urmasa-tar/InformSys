@@ -21,6 +21,22 @@ namespace FlatUI
         {
             // FormMainMenu.Instance.mainFunction.updatePar();
             // FormMainMenu.Instance.N = txtBN.Text;
+
         }
+
+        /*
+        private void ProcessInput(string input)
+        {
+            try
+            {
+                int number = Convert.ToInt32(input); // Преобразуем строку в число
+                MessageBox.Show($"Вы ввели число: {number}");
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Ошибка! Введенное значение не является числом.");
+            }
+        }
+        */
     }
 }
