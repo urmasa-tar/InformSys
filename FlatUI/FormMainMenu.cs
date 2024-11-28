@@ -47,12 +47,12 @@ namespace FlatUI
             _instance = this;
             mainFunction = new funcClasscs();
             // base value for global varibles
-            N = 57;
-            a = -5;
-            dx = 0.4;
-            k1 = 0;
-            x1 = 0;
-            kd = 1;
+            N = 57; //
+            a = -5; //
+            dx = 0.4; //
+            k1 = 0; //
+            x1 = 0; //
+            kd = 1; // 
 
 
         }
@@ -96,10 +96,12 @@ namespace FlatUI
             chartForFormula.Series.Clear();
 
             // Параметры функции
+            /*
             double A = 1;
             double x1 = -10;
             double k = 0.5;
             double a = 4;
+            */
 
             // Первая серия для первой части функции
             var series1 = new Series("FirstPart")
@@ -116,16 +118,16 @@ namespace FlatUI
             };
 
             // Генерация точек для первой части функции
-            for (double x = x1; x < k * a; x += 0.01)
+            for (double x = x1; x < k1 * a; x += 0.01)
             {
-                double y = Math.Sqrt(A * Math.Abs(x + 2 * A));
+                double y = Math.Sqrt(a * Math.Abs(x + 2 * a));
                 series1.Points.AddXY(x, y);
             }
 
             // Генерация точек для второй части функции
-            for (double x = k * a; x <= 30; x += 0.01)
+            for (double x = k1 * a; x <= 30; x += 0.01)
             {
-                double y = A * Math.Cos(x + 1) + A;
+                double y = a * Math.Cos(x + 1) + a;
                 series2.Points.AddXY(x, y);
             }
 

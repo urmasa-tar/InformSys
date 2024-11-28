@@ -24,12 +24,12 @@ namespace FlatUI
 
             try
             {
-                FormMainMenu.Instance.N = 12345;
-                FormMainMenu.Instance.a = 12345;
-                FormMainMenu.Instance.k1 = 12345;
-                FormMainMenu.Instance.x1 = 12345;
-                FormMainMenu.Instance.kd = 12345;
-                FormMainMenu.Instance.dx = 12345;
+                FormMainMenu.Instance.N = int.Parse(txtBN.Text);
+                FormMainMenu.Instance.a = double.Parse(txta.Text);
+                FormMainMenu.Instance.k1 = double.Parse(txtBN.Text);
+                FormMainMenu.Instance.x1 = double.Parse(txtk1.Text);
+                FormMainMenu.Instance.kd = double.Parse(txtx1.Text);
+                FormMainMenu.Instance.dx = double.Parse(txtKd.Text);
 
             }
             catch (Exception ex)
